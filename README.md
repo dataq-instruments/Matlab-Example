@@ -10,6 +10,7 @@
  To run the example, you need to locate the COM port the device is connected to
  
  For PC, open Windows->Control Panel->Device Manager and you will find the COM port listed under Ports (COM & LPT), in the screen capture below, 2108 is on COM 4
+ 
 ![alt text](https://www.dataq.com/resources/repository/matlab_devicemanager.png)
 
  For Mac, follow the steps below:
