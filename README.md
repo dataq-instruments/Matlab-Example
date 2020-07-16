@@ -2,10 +2,13 @@
  Matlab example for DI-1100, 1110, 1120, 2108, 2108P, 4108, 4208, 4718 and 4730, USB mode only
  To use it, one must change the device from LibUSB mode (WinDaq capable) to CDC mode first. Do do so, follow the steps below:
  
- Connect the device to computer
- Once you see the blinking green light blinking, push and hold the button
- Wait until the LED turns white then red
- release the button and the device will be switched to CDC mode, and blinks yellow
+ 1. Connect the device to computer
+ 
+ 2. Once you see the blinking green light blinking, push and hold the button
+ 
+ 3. Wait until the LED turns white then red
+ 
+ 4. Release the button and the device will be switched to CDC mode, and blinks yellow
 
  To run the example, you need to locate the COM port the device is connected to
  
@@ -14,7 +17,9 @@
 ![alt text](https://www.dataq.com/resources/repository/matlab_devicemanager.png)
 
  For Mac, follow the steps below:
+ 
  1. Don't plug in the Dataq device
+ 
  2. At  Matlab prompt under command window (looks like >>), type seriealportlist and press enter, this will show the existing ports:
  
 ![alt text](https://www.dataq.com/resources/repository/matlab_image001.png)
