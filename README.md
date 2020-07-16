@@ -1,6 +1,11 @@
 # Matlab Example
  Matlab example for DI-1100, 1110, 1120, 2108, 2108P, 4108, 4208, 4718 and 4730, USB mode only
- To use it, one must change the device from LibUSB mode (WinDaq capable) to CDC mode first. Do do so, follow the steps below:
+ 
+ The example runs on both Windows PC and Mac.
+ 
+ To use it, one must change the device from LibUSB mode (WinDaq capable) to CDC mode first. 
+ 
+ Do do so, follow the steps below:
  
  1. Connect the device to computer
  
@@ -36,6 +41,8 @@
  
  ![alt text](https://www.dataq.com/resources/repository/matlab_image005.png)
  
- Once you select the correct COM port, you can run the program and here is the capture of my run
+ Once you locate the correct COM port and modify the Matlab program accordingly, you can run the program. 
+ 
+ Below is the capture of my run
  
   ![alt text](https://www.dataq.com/resources/repository/matlab_matlaboutput.png)
