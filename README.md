@@ -3,7 +3,7 @@
  
  The example runs on both Windows PC and Mac.
  
- To use it, one must change the device from LibUSB mode (WinDaq capable) to CDC mode first. 
+ To use it, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to CDC mode (blinking yellow when idle) first. 
  
  Do do so, follow the steps below:
  
