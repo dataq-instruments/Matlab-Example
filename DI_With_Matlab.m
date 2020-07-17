@@ -57,9 +57,9 @@ pause(0.1)
 % Read data
 for i=1:numOfData
     % Read the data
-    data(i) = readline(s);
+    data = readline(s);
     % Convert to number
-    NumData(i) = str2double(data(i));
+    NumData(i) = str2double(data);
 end
 
 % Stop data acquisition
