@@ -1,7 +1,7 @@
 
 % Dataq DI 1100, DI2100, DI4000 series with MATLAB R2019b
 %
-% The device must be in CDC mode
+% The device must be in CDC mode, follow README discussion
 %
 % See README in the project for useful discussion
 %================================================
