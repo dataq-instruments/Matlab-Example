@@ -16,7 +16,7 @@
  4. Release the button and the device will be switched to CDC mode, and blinks yellow
 
 ```diff
- -To run the example, you need to locate the COM port the device is connected to
++To run the example, you need to locate the COM port the device is connected to
 ```
  
  **For PC**, open Windows->Control Panel->Device Manager and you will find the COM port listed under Ports (COM & LPT), in the screen capture below, 2108 is on COM 4
@@ -50,7 +50,7 @@
   ![alt text](https://www.dataq.com/resources/repository/matlab_matlaboutput.png)
   
  ```diff
- -Side Notes
+ !Side Notes
  ```diff
  
  The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
