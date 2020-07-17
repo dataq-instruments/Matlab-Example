@@ -47,5 +47,5 @@
   
  Side note:
  
- If higher sample rate is needed, it is necessary to force the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read
+ If higher sample rate is needed, it is necessary to force the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html
  
