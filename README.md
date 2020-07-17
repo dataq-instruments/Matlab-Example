@@ -41,6 +41,11 @@
  
  Once you locate the correct COM port and modify the Matlab program accordingly, you can run the program. 
  
- Below is the capture of my run
+ Below is the capture of a test run
  
   ![alt text](https://www.dataq.com/resources/repository/matlab_matlaboutput.png)
+  
+ Side note:
+ 
+ If higher sample rate is needed, it is necessary to force the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read
+ 
