@@ -49,31 +49,31 @@
  
  The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
  
- for i=1:numOfData
+ _for i=1:numOfData_
  
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Read the data
+ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Read the data_
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = readline(s);
+ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = readline(s);_
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Convert to number
+ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Convert to number_
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = str2double(data);
+ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = str2double(data);_
     
-end
+_end_
 
 could be changed to 
 
-for i=1:numOfData
+_for i=1:numOfData_
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Read the data
+_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Read the data_
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data=read(s,1,"int16");
+_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data=read(s,1,"int16");_
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Convert to number
+_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Convert to number_
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = double(data);
+_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = double(data);_
     
-end
+_end_
  
  Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
