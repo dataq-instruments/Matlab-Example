@@ -1,5 +1,5 @@
 # Matlab Example
- Windows PC and Mac Matlab example for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718 and DI-4730, ASCII output USB mode
+ Windows PC and Mac Matlab example for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718 and DI-4730, USB mode
  
   To use it, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to CDC mode (blinking yellow when idle) first. 
  
@@ -47,7 +47,23 @@
   
  Side note:
  
- If higher sample rate is needed, it is necessary to force the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html
+ The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
+ 
+ for i=1:numOfData
+    % Read the data
+    data = readline(s);
+    % Convert to number
+    NumData(i) = str2double(data);
+end
+
+could be changed to 
+
+for i=1:numOfData
+    % Read the data
+    data=read(s,1,"int16");
+    % Convert to number
+    NumData(i) = double(data);
+end
  
  Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
