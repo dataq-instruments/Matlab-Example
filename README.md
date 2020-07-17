@@ -3,7 +3,9 @@
  
   To use it, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
- Do do so, follow the steps below:
+ ```diff
+- To do so, follow the steps below:
+ ```
  
  1. Connect the device to computer
  
