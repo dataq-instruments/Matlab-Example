@@ -1,9 +1,7 @@
 # Matlab Example
- Matlab example for DI-1100, 1110, 1120, 2108, 2108P, 4108, 4208, 4718 and 4730, USB mode only
+ Windows PC and Mac Matlab example for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718 and DI-4730, USB mode
  
- The example runs on both Windows PC and Mac.
- 
- To use it, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to CDC mode (blinking yellow when idle) first. 
+  To use it, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to CDC mode (blinking yellow when idle) first. 
  
  Do do so, follow the steps below:
  
