@@ -9,7 +9,7 @@
 clear, clc
 
 numOfData = 100;   
-% port = "/dev/tty.usbmodemFA131";    % For Mac OS
+% port = "/dev/tty.usbmodemFA131";    % For Mac OS, follow README discussion
 port = "COM4";    % For Windows, in device manager's Ports (COM & LPT)
 baudrate = 115200;
 s = serialport(port, baudrate, "Timeout", 5);
@@ -32,7 +32,7 @@ pause(0.1)
 writeline(s, "eol 0")
 pause(0.1)
 
-% Set up for ascii communication
+% Set up for ascii communication, follow README discussion
 writeline(s, "encode 1")
 pause(0.1)
 data = readline(s);
@@ -56,7 +56,7 @@ flush(s)
 writeline(s, "start")
 pause(0.1)
 
-% Read data
+% Read data, follow README discussion
 for i=1:numOfData
     % Read the data
     data = readline(s);
