@@ -45,6 +45,8 @@
  
  Once you locate the correct COM port and modify the Matlab program accordingly, you can run the program. 
  
+ If you wish to know more about the protocol behind the program, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf
+ 
  Below is the capture of a test run
  
   ![alt text](https://www.dataq.com/resources/repository/matlab_matlaboutput.png)
