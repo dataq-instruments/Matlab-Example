@@ -27,16 +27,13 @@
  
  1. Don't plug in the Dataq device
  
- 2. At  Matlab prompt under command window (looks like >>), type seriealportlist and press enter, this will show the existing ports:
- 
+ 2. At  Matlab prompt under command window (looks like >>), type seriealportlist and press enter, this will show the existing ports: <br/> 
 ![alt text](https://www.dataq.com/resources/repository/matlab_image001.png)
 
- 3. Plug the Dataq device into the USB port (make sure it is in CDC mode!) and issue the same command
- 
+ 3. Plug the Dataq device into the USB port (make sure it is in CDC mode!) and issue the same command <br/> 
  ![alt text](https://www.dataq.com/resources/repository/matlab_image002.png)
  
- 4. You will see two more devices appear in the list.  Choose one of them (in my case I used /dev/tty.usbmodemFA131) as the port.  I think either one (tty or cu) works.  Unfortunately, it does not show the entire detail (cuts FA131 out).  To see that, you can bring up the Workspace tab by clicking on it:
- 
+ 4. You will see two more devices appear in the list.  Choose one of them (in my case I used /dev/tty.usbmodemFA131) as the port.  I think either one (tty or cu) works.  Unfortunately, it does not show the entire detail (cuts FA131 out).  To see that, you can bring up the Workspace tab by clicking on it: <br/> 
  ![alt text](https://www.dataq.com/resources/repository/matlab_image003.png)
  
  Double click on the “ans” variable to see the four ports (adjust column width):
