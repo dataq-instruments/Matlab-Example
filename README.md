@@ -47,10 +47,9 @@
   - Below is the capture of a test run <br/> 
   ![alt text](https://www.dataq.com/resources/repository/matlab_matlaboutput.png)
   
- ```diff
- !Extra Notes
- ```
  
+ **Extra Notes**
+  
  The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
  
  _for i=1:numOfData_
