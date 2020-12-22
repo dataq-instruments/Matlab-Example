@@ -62,7 +62,7 @@
     
  _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = str2double(data);_
     
-_end_
+_&nbsp;&nbsp;&nbsp;end_
 
 &nbsp;&nbsp;&nbsp;could be changed to 
 
@@ -76,7 +76,7 @@ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Convert to number_
     
 _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = double(data);_
     
-_end_
+_&nbsp;&nbsp;&nbsp;end_
  
 - Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
