@@ -50,7 +50,7 @@
  
  **Extra Notes**
   
- The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
+ - The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read. See https://www.mathworks.com/help/matlab/ref/serialport.read.html, for example:
  
  _for i=1:numOfData_
  
@@ -78,10 +78,10 @@ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumData(i) = double(data);_
     
 _end_
  
- Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
+- Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
- To use binary mode, firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
+- To use binary mode, firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
  
- If you wish to know more about the protocol behind the program, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf
+- If you wish to know more about the protocol behind the program, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf
  
  
