@@ -1,5 +1,5 @@
 # Matlab Example
- Windows PC and Mac Matlab example for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode, without using .NET class
+ Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode, without using .NET class
  
  To try this example, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
