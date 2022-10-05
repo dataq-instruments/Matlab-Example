@@ -16,7 +16,7 @@
  4. Release the button and the device will be switched to CDC mode, and blinks yellow
 
 ```diff
-+To run the example, you need to locate the COM port the device is connected to
++To run the example, you need to locate the COM port the device is connected to. For USB device, the baudrate is not important
 ```
  
  **For PC**:
