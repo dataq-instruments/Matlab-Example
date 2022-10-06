@@ -84,6 +84,6 @@ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end_
  
 - To use binary mode, firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
  
-- If you wish to know more about the protocol behind the program, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf
+- If you wish to know more about the protocol behind the program, for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf. For DI-188, please visit https://www.dataq.com/resources/pdfs/misc/di-188-protocol.pdf
  
  
