@@ -1,8 +1,10 @@
 # Matlab Example
- Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode only
+ Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI_2008, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode only
 
  For DI-188, skip the instruction below on how to change from LibUSB mode to CDC mode
  
+ For DI-2008, make sure your firmware rev is at least 1.15
+
  For DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
  ```diff
