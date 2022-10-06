@@ -1,9 +1,9 @@
 # Matlab Example
- Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode only
+ Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode only
 
  For DI-188, skip the instruction below on how to change from LibUSB mode to CDC mode
  
- For DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
+ For DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
  ```diff
 -To do so, follow the steps below:
@@ -82,8 +82,8 @@ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end_
  
 - Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
-- To use binary mode with DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, , firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
+- To use binary mode with DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, , firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
  
-- If you wish to know more about the protocol behind the program, for DI-1100, DI-1110, DI-1120, DI-2108, DI-2108P, DI-4108, DI-4208, DI-4718, and DI-4730, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf. For DI-188, please visit https://www.dataq.com/resources/pdfs/misc/di-188-protocol.pdf
+- If you wish to know more about the protocol behind the program, for DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf. For DI-188, please visit https://www.dataq.com/resources/pdfs/misc/di-188-protocol.pdf
  
  
