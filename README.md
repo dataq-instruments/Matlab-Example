@@ -8,7 +8,7 @@
  For DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
  ```diff
--To do so, follow the steps below:
+-How to change the device from LibUSB mode to CDC mode
  ```
  
  1. Connect the device to computer
