@@ -12,6 +12,8 @@
  1. If your device is DI-188, skip this, it is already in CDC mode
 
  2. Connect the device to computer
+
+ 3. If the device blinks yellow, skip the rest, it is already in CDC mode
  
  2. Once you see the blinking green light blinking, immediately push and hold the button
  
