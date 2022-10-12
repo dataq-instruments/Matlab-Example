@@ -33,10 +33,13 @@ readline(s);
 writeline(s, "encode 1")
 pause(0.1)
 
-% Set up 1 channel to scan
+% Set up two channels to scan
 writeline(s, "slist 0 0")
 pause(0.1)
 
+% Set up 1 channel to scan
+writeline(s, "slist 1 1")
+pause(0.1)
 % Rate and other setup
 writeline(s, "rrate 20") %request sample rate of 20s/s, read protocol to find out more about it
 pause(0.1)
@@ -53,8 +56,10 @@ readline(s);
 for i=1:numOfData
     % Read the data
     data = readline(s);
+    C = strsplit(data);
     % Convert to number
-    NumData(i) = str2double(data);
+    NumData(i) = str2double(C(1));
+    NumData2(i) = str2double(C(2));
 end
 
 % Stop data acquisition
@@ -65,8 +70,12 @@ figure(1)
 plot(NumData, 'o-');
 grid on; ylabel('Value'); xlabel('sample')
 
+% Plot data
+figure(2)
+plot(NumData2, 'o-');
+grid on; ylabel('Value'); xlabel('sample')
 % Calculate average
 aveValue = mean(NumData)
-
+aveValue2 = mean(NumData2)
 % Close the port
 clear s
