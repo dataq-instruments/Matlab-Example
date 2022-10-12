@@ -56,7 +56,7 @@
  
  **Extra Notes**
   
- - The example uses ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" should be used, and readline should be changed to read. See https://www.mathworks.com/help/matlab/ref/serialport.read.html as reference:
+ - Most examples here use ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" and "ps" command should be employed, and readline should be changed to read. One binary example is shown here, DI_With_Matlab_binary.m. You may find more info regarding binary read in https://www.mathworks.com/help/matlab/ref/serialport.read.html:
  
  _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i=1:numOfData_
  
