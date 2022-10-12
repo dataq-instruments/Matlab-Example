@@ -10,8 +10,8 @@ clear, clc
 
 numOfData = 100;   
 % port = "/dev/tty.usbmodemFA131";    % For Mac OS, follow README discussion
-port = "COM4";    % For Windows, in device manager's Ports (COM & LPT)
-baudrate = 115200;
+port = "COM6";    % For Windows, in device manager's Ports (COM & LPT)
+baudrate = 115200; %this is just like a place holder, it has no meaning
 s = serialport(port, baudrate, "Timeout", 5);
 configureTerminator(s, "CR")
 % Clear serial buffer
@@ -37,14 +37,16 @@ writeline(s, "encode 1")
 pause(0.1)
 data = readline(s);
 
-% Set up channel(s) to scan
+% Set up 2 channels to scan
 writeline(s, "slist 0 0")
+pause(0.1)
+writeline(s, "slist 1 1")
 pause(0.1)
 
 % Rate and other setup
-writeline(s, "srate 60000")
+writeline(s, "srate 6000")
 pause(0.1)
-writeline(s, "dec 5")
+writeline(s, "dec 100")
 pause(0.1)
 writeline(s, "deca 1")
 pause(1)
@@ -60,8 +62,10 @@ pause(0.1)
 for i=1:numOfData
     % Read the data
     data = readline(s);
+    C = strsplit(data, ',');
     % Convert to number
-    NumData(i) = str2double(data);
+    NumData(i) = str2double(C(1));
+    NumData2(i) = str2double(C(2));
 end
 
 % Stop data acquisition
@@ -72,8 +76,13 @@ figure(1)
 plot(NumData, 'o-');
 grid on; ylabel('Value'); xlabel('sample')
 
+figure(2)
+plot(NumData2, 'o-');
+grid on; ylabel('Value'); xlabel('sample')
+
 % Calculate average
 aveValue = mean(NumData)
+aveValue2 = mean(NumData2)
 
 % Close the port
 clear s
