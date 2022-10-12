@@ -1,7 +1,5 @@
 
-% Dataq DI 188 with MATLAB R2019b
-%
-% The device must be in CDC mode, follow README discussion
+% Dataq DI 188: tested on MATLAB R2022b
 %
 % See README in the project for useful discussion
 %================================================
