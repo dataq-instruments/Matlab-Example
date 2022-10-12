@@ -56,7 +56,7 @@
  
  **Extra Notes**
   
- - Most examples here use ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" and "ps" command should be employed, and readline should be changed to read. One binary example is shown here, DI_With_Matlab_binary.m. You may find more info regarding binary read in https://www.mathworks.com/help/matlab/ref/serialport.read.html:
+ - Most examples here use ASCII output mode ("encode 1"), but if higher sample rate is needed, it is necessary to program the device to binary output mode, thus "encode 0" and "ps" command should be employed, and readline should be changed to read. One binary example is shown here, [DI_With_Matlab_binary.m](https://github.com/dataq-instruments/Matlab-Example/blob/master/DI_With_Matlab_binary.m). You may find more info regarding binary read in https://www.mathworks.com/help/matlab/ref/serialport.read.html:
  
  _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i=1:numOfData_
  
@@ -86,7 +86,7 @@ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end_
  
 - Callback may be employed https://www.mathworks.com/help/matlab/ref/serialport.configurecallback.html
  
-- To use binary mode with DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, , firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
+- To use binary mode with DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, firmware 1.35 or higher is recommended https://github.com/dataq-instruments/Firmware_Upgrade. 
  
 - If you wish to know more about the protocol behind the program, for DI-1100, DI-1110, DI-1120, DI-2008, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf. For DI-188, please visit https://www.dataq.com/resources/pdfs/misc/di-188-protocol.pdf
  
