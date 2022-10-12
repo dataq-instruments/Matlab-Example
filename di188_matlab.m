@@ -37,9 +37,9 @@ pause(0.1)
 writeline(s, "slist 0 0")
 pause(0.1)
 
-% Set up 1 channel to scan
 writeline(s, "slist 1 1")
 pause(0.1)
+
 % Rate and other setup
 writeline(s, "rrate 20") %request sample rate of 20s/s, read protocol to find out more about it
 pause(0.1)
