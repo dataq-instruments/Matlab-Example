@@ -37,12 +37,16 @@ writeline(s, "encode 1")
 pause(0.1)
 data = readline(s);
 
-% Set up channel(s) to scan
+% Set up three channels to scan
 writeline(s, "slist 0 0")
+pause(0.1)
+writeline(s, "slist 1 1")
+pause(0.1)
+writeline(s, "slist 2 2")
 pause(0.1)
 
 % Rate and other setup
-writeline(s, "srate 800")
+writeline(s, "srate 4")
 pause(0.1)
 writeline(s, "dec 1")
 pause(0.1)
@@ -59,8 +63,11 @@ pause(0.1)
 for i=1:numOfData
     % Read the data
     data = readline(s);
+    C = strsplit(data, ',');
     % Convert to number
-    NumData(i) = str2double(data);
+    NumData(i) = str2double(C(1));
+    NumData2(i) = str2double(C(2));
+    NumData3(i) = str2double(C(3));
 end
 
 % Stop data acquisition
@@ -71,8 +78,18 @@ figure(1)
 plot(NumData, 'o-');
 grid on; ylabel('Value'); xlabel('sample')
 
+figure(2)
+plot(NumData2, 'o-');
+grid on; ylabel('Value'); xlabel('sample')
+
+figure(3)
+plot(NumData3, 'o-');
+grid on; ylabel('Value'); xlabel('sample')
 % Calculate average
 aveValue = mean(NumData)
+lastValue = NumData2(numOfData)
+lastValue2 = NumData3(numOfData)
+
 
 % Close the port
 clear s
