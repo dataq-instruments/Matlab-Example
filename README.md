@@ -1,25 +1,33 @@
 # Matlab Example
  Windows PC and Mac Matlab example for DI-188, DI-1100, DI-1110, DI-1120, DI_2008, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, USB mode only
 
- For DI-2008, make sure your firmware rev is at least 1.15
+ For DI-2008, make sure the firmware rev is at least 1.15
 
- For DI-1100, DI-1110, DI-1120, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
+ For DI-1100, DI-1110, DI-1120, DI-2008, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, one must change the device from LibUSB mode (WinDaq capable, blinking green when idle) to **CDC mode (blinking yellow when idle)** first. 
  
  ```diff
 -How to change the device from LibUSB mode to CDC mode
  ```
  
- 1. If your device is DI-188, skip this, it is already in CDC mode
+ 1. If your device is DI-188, skip the rest, it is already in CDC mode
 
  2. Connect the device to computer
 
  3. If the device blinks yellow, skip the rest, it is already in CDC mode
  
- 2. Once you see the blinking green light blinking, immediately push and hold the button
+ 4. If your device is DI-2008, skip to Step 8
  
- 3. Wait until the LED turns white then red
+ 5. Once you see the blinking green light blinking, immediately push and hold the button
  
- 4. Release the button and the device will be switched to CDC mode, and blinks yellow
+ 6. Wait until the LED turns white then red
+ 
+ 7. Release the button and the device will be switched to CDC mode, and blinks yellow. 
+ 
+ 8. The following step is for DI-2008 only
+ 
+ 9. When you see DI-2008 blinks green, press and release the button six times at 1 second interval
+ 
+ 10. DI-2008 will switch to CDC mode, and blinks yellow. 
 
 ```diff
 +To run the example, you need to locate the COM port the device is connected to. For USB device, the baudrate is not important
