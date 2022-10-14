@@ -28,7 +28,7 @@ data = readline(s)
 writeline(s, "stop")
 pause(0.1)
 
-% Set up for ascii communication, follow README discussion
+% Set up for binary streaming communication, follow README discussion
 writeline(s, "encode 0")
 pause(0.1)
 data = readline(s);
@@ -46,6 +46,8 @@ writeline(s, "dec 200")
 pause(0.1)
 writeline(s, "deca 1")
 pause(1)
+
+% binary stream should use ps command to control the data rate, please read protocol for more info
 writeline(s, "ps 0")
 pause(1)
 data = readline(s);
