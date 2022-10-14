@@ -9,9 +9,11 @@ clear, clc
 numOfData = 100;   
 % port = "/dev/tty.usbmodemFA131";    % For Mac OS, follow README discussion
 port = "COM6";    % For Windows, in device manager's Ports (COM & LPT)
-baudrate = 115200;
+baudrate = 115200; % This is has no effect on data rate
+
 s = serialport(port, baudrate, "Timeout", 5);
 configureTerminator(s, "CR")
+
 % Clear serial buffer
 flush(s)
 
@@ -41,6 +43,10 @@ pause(0.1)
 % Rate and other setup
 writeline(s, "rrate 20") %request sample rate of 20s/s, read protocol to find out more about it
 pause(0.1)
+flush(s)
+
+writeline(s, "rrate") %query the actual sample rate
+ActualSampleRate=readline(s)
 
 % Flush the port buffer
 flush(s)
@@ -48,16 +54,16 @@ flush(s)
 % Start scanning
 writeline(s, "start")
 pause(0.1);
-readline(s);
+readline(s)
 
 % Read data, follow README discussion
 for i=1:numOfData
-    % Read the data
+    % Read the raw data, which are 16-bit integers
     data = readline(s);
     C = strsplit(data);
     % Convert to number
-    NumData(i) = str2double(C(1));
-    NumData2(i) = str2double(C(2));
+    Channel1Data(i) = str2double(C(1));
+    Channel2Data(i) = str2double(C(2));
 end
 
 % Stop data acquisition
@@ -65,15 +71,16 @@ writeline(s, "stop")
 
 % Plot data
 figure(1)
-plot(NumData, 'o-');
+plot(Channel1Data, 'o-');
 grid on; ylabel('Value'); xlabel('sample')
 
 % Plot data
 figure(2)
-plot(NumData2, 'o-');
+plot(Channel2Data, 'o-');
 grid on; ylabel('Value'); xlabel('sample')
+
 % Calculate average
-aveValue = mean(NumData)
-aveValue2 = mean(NumData2)
+aveValue = mean(Channel1Data)
+aveValue2 = mean(Channel2Data)
 % Close the port
 clear s
