@@ -21,13 +21,13 @@
  
  6. Wait until the LED turns white then red
  
- 7. Release the button and the device will be switched to CDC mode, and blinks yellow. 
- 
+ 7. Release the button and the device will be switched to CDC mode, and blinks yellow. Skip to 10
+
  8. The following step is for DI-2008 only
  
- 9. When you see DI-2008 blinks green, press and release the button six times at 1 second interval
- 
- 10. DI-2008 will switch to CDC mode, and blinks yellow. 
+ 9. When you see DI-2008 blinks green, press and release the button at 1 hz rate, until DI-2008 switch to CDC mode, and blinks yellow. 
+
+10. Repeat the above operation if you need to switch back to LibUSB mode
 
 ```diff
 +To run the example, you need to locate the COM port the device is connected to. For USB device, the baudrate is not important
