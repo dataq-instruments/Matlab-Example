@@ -46,10 +46,20 @@ pause(0.1)
 % Rate and other setup
 writeline(s, "srate 6000")
 pause(0.1)
-writeline(s, "dec 100")
+writeline(s, "dec 200")
 pause(0.1)
 writeline(s, "deca 1")
 pause(1)
+data = readline(s);
+
+% Let's turn D0/1/2 from input to switch so that we can output 
+writeline(s, "endo 7") 
+pause(0.1)
+
+% Output 1 on D0/1/2
+writeline(s, "dout 7") 
+pause(0.1)
+
 
 % Flush the port buffer
 flush(s)
@@ -58,15 +68,20 @@ flush(s)
 writeline(s, "start")
 pause(0.1)
 
+
 % Read data, follow README discussion
 for i=1:numOfData
     % Read the data
     data = readline(s);
-    C = strsplit(data, ',');
+    C = strsplit(data, ','); 
     % Convert to number
     NumData(i) = str2double(C(1));
     NumData2(i) = str2double(C(2));
 end
+
+% Output 0 on D0/1/2
+writeline(s, "dout 0") 
+pause(0.1)
 
 % Stop data acquisition
 writeline(s, "stop")
