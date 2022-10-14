@@ -9,7 +9,7 @@
 -How to change the device from LibUSB mode to CDC mode
  ```
  
- 1. If your device is DI-188, skip the rest, it is already in CDC mode
+ 1. If your device is DI-188, skip the rest, it is always in CDC mode
 
  2. Connect the device to computer
 
