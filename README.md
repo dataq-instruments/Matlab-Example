@@ -35,7 +35,7 @@
  
  **For PC**:
  
- 1 Open Windows->Control Panel->Device Manager and find find the COM port listed under Ports (COM & LPT), in the screen capture below, 2108 is on COM 4 <br/> 
+ 1. Open Windows->Control Panel->Device Manager and find find the COM port listed under Ports (COM & LPT), in the screen capture below, 2108 is on COM 4 <br/> 
 ![alt text](https://www.dataq.com/resources/repository/matlab_devicemanager.png)
 
  2.Since DI-188 uses Windows' generic CDC driver, it will not be listed with DI-188 label. You can confirm its port by removing then re-plugging in DI-188 and watch the changes of COM port list under Windows->Control Panel->Device Manager.
