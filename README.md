@@ -73,5 +73,9 @@
 - [DI_With_Matlab.m](https://github.com/dataq-instruments/Matlab-Example/blob/master/DI_With_Matlab.m) also demonstrate how to output control signals via DIO port
  
 - If you wish to know more about the protocol behind the program, for DI-1100, DI-1110, DI-1120, DI-2008, DI-2108, DI-4108, DI-4208, DI-4718, and DI-4730, please visit https://www.dataq.com/resources/pdfs/misc/Dataq-Instruments-Protocol.pdf. For DI-188, please visit https://www.dataq.com/resources/pdfs/misc/di-188-protocol.pdf
+
+- If you have trouble using Python, you can use any serial terminal program (such as TeraTerm) to connect to your device (DI-2108 in the following example) and type in the commands manually, as following
+
+   ![alt text](https://www.dataq.com/resources/images/cdc2108.png)
  
  
